@@ -1,0 +1,126 @@
+[
+  {
+    "label": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+    "input": {
+      "idade": "0",
+      "choque": "0",
+      "comorb": "0",
+      "diag": "na",
+      "estigma": "na"
+    },
+    "expected": {
+      "raw": {
+        "pre": 0
+      },
+      "main": "0",
+      "level": "low",
+      "verdict": "pré-endoscópico 0"
+    },
+    "originalInput": {
+      "idade": "0",
+      "choque": "0",
+      "comorb": "0",
+      "diag": "na",
+      "estigma": "na"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
+    "input": {
+      "idade": "2",
+      "choque": "2",
+      "comorb": "2",
+      "diag": "na",
+      "estigma": "na"
+    },
+    "expected": {
+      "raw": {
+        "pre": 6
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "idade": "2",
+      "choque": "2",
+      "comorb": "2",
+      "diag": "na",
+      "estigma": "na"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+    "input": {
+      "idade": "1",
+      "choque": "0",
+      "comorb": "0",
+      "diag": "1",
+      "estigma": "0"
+    },
+    "expected": {
+      "raw": {
+        "score": 2,
+        "pre": 1
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "idade": "1",
+      "choque": "0",
+      "comorb": "0",
+      "diag": "1",
+      "estigma": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+    "input": {
+      "idade": "1",
+      "choque": "1",
+      "comorb": "2",
+      "diag": "0",
+      "estigma": "0"
+    },
+    "expected": {
+      "raw": {
+        "score": 4
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "idade": "1",
+      "choque": "1",
+      "comorb": "2",
+      "diag": "0",
+      "estigma": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+    "input": {
+      "idade": "2",
+      "choque": "2",
+      "comorb": "3",
+      "diag": "2",
+      "estigma": "2"
+    },
+    "expected": {
+      "raw": {
+        "score": 11,
+        "pre": 7
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "idade": "2",
+      "choque": "2",
+      "comorb": "3",
+      "diag": "2",
+      "estigma": "2"
+    },
+    "expandedZeroOptions": []
+  }
+]

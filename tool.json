@@ -1,0 +1,235 @@
+{
+  "tool": {
+    "id": "escore-de-rockall",
+    "title": "Escore de Rockall",
+    "short": "Risco de óbito na hemorragia digestiva alta",
+    "desc": "Calcule o escore de Rockall na hemorragia digestiva alta: versão pré-endoscópica (0 a 7) e completa após a endoscopia (0 a 11), para risco de óbito e ressangramento.",
+    "lead": "Estima o risco de morte e de ressangramento na hemorragia digestiva alta. A parte clínica (idade, choque, comorbidades) dá o escore pré-endoscópico; somando diagnóstico e estigmas, obtém-se o escore completo.",
+    "spec": [
+      "endoscopia",
+      "gastroenterologia",
+      "medicina-de-emergencia",
+      "cirurgia-geral"
+    ],
+    "fields": [
+      [
+        "idade",
+        "Idade",
+        "radio",
+        {
+          "opts": {
+            "0": "&lt; 60 anos",
+            "1": "60 a 79 anos",
+            "2": "≥ 80 anos"
+          }
+        }
+      ],
+      [
+        "choque",
+        "Choque",
+        "sel",
+        {
+          "opts": {
+            "0": "Sem choque (PAS ≥ 100 e FC &lt; 100)",
+            "1": "Taquicardia (PAS ≥ 100 e FC ≥ 100)",
+            "2": "Hipotensão (PAS &lt; 100 mmHg)"
+          }
+        }
+      ],
+      [
+        "comorb",
+        "Comorbidades",
+        "sel",
+        {
+          "opts": {
+            "0": "Nenhuma importante",
+            "2": "Insuficiência cardíaca, cardiopatia isquêmica ou outra comorbidade importante",
+            "3": "Insuficiência renal, insuficiência hepática ou câncer disseminado"
+          }
+        }
+      ],
+      [
+        "diag",
+        "Diagnóstico endoscópico",
+        "sel",
+        {
+          "opts": {
+            "0": "Mallory-Weiss ou nenhuma lesão (sem estigmas)",
+            "1": "Todos os outros diagnósticos",
+            "2": "Neoplasia do trato digestivo alto",
+            "na": "Endoscopia ainda não realizada"
+          }
+        }
+      ],
+      [
+        "estigma",
+        "Estigmas de sangramento recente",
+        "sel",
+        {
+          "opts": {
+            "0": "Nenhum ou só ponto escuro (hematina)",
+            "2": "Sangue no trato alto, coágulo aderido, vaso visível ou em jato",
+            "na": "Endoscopia ainda não realizada"
+          }
+        }
+      ]
+    ],
+    "formula": "<p><strong>Pré-endoscópico (0 a 7):</strong> idade (0 a 2) + choque (0 a 2) + comorbidades (0, 2 ou 3).</p><p><strong>Completo (0 a 11):</strong> soma também o diagnóstico (0 a 2) e os estigmas de sangramento recente (0 ou 2).</p>",
+    "table": [
+      [
+        "Escore",
+        "Interpretação"
+      ],
+      [
+        "Pré-endoscópico 0",
+        "Baixo risco (15% dos pacientes na apresentação)"
+      ],
+      [
+        "Pré-endoscópico ≥ 4",
+        "Corte ótimo para prever óbito (Stanley 2017)"
+      ],
+      [
+        "Completo ≤ 2",
+        "Baixo risco de ressangramento e risco de óbito desprezível: alta precoce"
+      ],
+      [
+        "Completo ≥ 5",
+        "Corte ótimo para prever óbito (Stanley 2017)"
+      ]
+    ],
+    "tips": [
+      "O Rockall foi criado para prever <strong>mortalidade</strong>; para decidir alta sem endoscopia, o Glasgow-Blatchford é mais preciso.",
+      "O escore completo ≤ 2 identificou 26% dos pacientes após a endoscopia como candidatos à alta precoce no estudo original.",
+      "Nenhum escore previu bem o ressangramento no estudo internacional de Stanley (2017): mantenha vigilância clínica.",
+      "Hemoglobina e uso de anticoagulante não entram no escore, mas mudam a conduta: corrija a anticoagulação e transfunda conforme o alvo."
+    ],
+    "sources": [
+      [
+        "Rockall TA et al. Risk assessment after acute upper gastrointestinal haemorrhage. Gut, 1996.",
+        "https://doi.org/10.1136/gut.38.3.316"
+      ],
+      [
+        "Stanley AJ et al. Comparison of risk scoring systems for patients presenting with upper gastrointestinal bleeding: international multicentre prospective study. BMJ, 2017.",
+        "https://doi.org/10.1136/bmj.i6432"
+      ]
+    ],
+    "cases": [
+      [
+        "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+        {
+          "idade": "0",
+          "choque": "0",
+          "comorb": "0",
+          "diag": "na",
+          "estigma": "na"
+        },
+        {
+          "raw": {
+            "pre": 0
+          },
+          "main": "0",
+          "level": "low",
+          "verdict": "pré-endoscópico 0"
+        }
+      ],
+      [
+        "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
+        {
+          "idade": "2",
+          "choque": "2",
+          "comorb": "2",
+          "diag": "na",
+          "estigma": "na"
+        },
+        {
+          "raw": {
+            "pre": 6
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+        {
+          "idade": "1",
+          "choque": "0",
+          "comorb": "0",
+          "diag": "1",
+          "estigma": "0"
+        },
+        {
+          "raw": {
+            "score": 2,
+            "pre": 1
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+        {
+          "idade": "1",
+          "choque": "1",
+          "comorb": "2",
+          "diag": "0",
+          "estigma": "0"
+        },
+        {
+          "raw": {
+            "score": 4
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+        {
+          "idade": "2",
+          "choque": "2",
+          "comorb": "3",
+          "diag": "2",
+          "estigma": "2"
+        },
+        {
+          "raw": {
+            "score": 11,
+            "pre": 7
+          },
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "renal-digestivo",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "renal-digestivo",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/renal-digestivo.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 5,
+      "passed": 5,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/renal-digestivo.php",
+    "sha256": "95087d729438637d36e1a49af04d8de0fe1d9f7876443084443906a9281ef107",
+    "bytes": 109421
+  },
+  "clinicalValidation": "not-performed"
+}
