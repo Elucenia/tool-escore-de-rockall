@@ -1,11 +1,11 @@
-/* tool-escore-de-rockall · Elucenia · https://github.com/Elucenia/tool-escore-de-rockall
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-escore-de-rockall · ELUCENIA · https://github.com/Elucenia/tool-escore-de-rockall
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escore-de-rockall","title":"Escore de Rockall","fields":[["idade","Idade","radio",{"opts":{"0":"&lt; 60 anos","1":"60 a 79 anos","2":"≥ 80 anos"}}],["choque","Choque","sel",{"opts":{"0":"Sem choque (PAS ≥ 100 e FC &lt; 100)","1":"Taquicardia (PAS ≥ 100 e FC ≥ 100)","2":"Hipotensão (PAS &lt; 100 mmHg)"}}],["comorb","Comorbidades","sel",{"opts":{"0":"Nenhuma importante","2":"Insuficiência cardíaca, cardiopatia isquêmica ou outra comorbidade importante","3":"Insuficiência renal, insuficiência hepática ou câncer disseminado"}}],["diag","Diagnóstico endoscópico","sel",{"opts":{"0":"Mallory-Weiss ou nenhuma lesão (sem estigmas)","1":"Todos os outros diagnósticos","2":"Neoplasia do trato digestivo alto","na":"Endoscopia ainda não realizada"}}],["estigma","Estigmas de sangramento recente","sel",{"opts":{"0":"Nenhum ou só ponto escuro (hematina)","2":"Sangue no trato alto, coágulo aderido, vaso visível ou em jato","na":"Endoscopia ainda não realizada"}}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};

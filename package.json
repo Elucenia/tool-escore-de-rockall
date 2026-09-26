@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-escore-de-rockall",
   "version": "0.1.0",
-  "description": "Escore de Rockall · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Escore de Rockall · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
