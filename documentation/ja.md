@@ -1,0 +1,98 @@
+<!-- ELUCENIA technical documentation · escore-de-rockall · ja · no clinical/professional/rights approval -->
+
+# Rockallスコア
+
+[条件・出典・許諾](https://elucenia.org/ja/tools/escore-de-rockall)
+
+## 使い方
+
+ポータルでツールを使用するか、ローカルHTTPサーバー経由でindex.htmlを開いてください。言語を選択し、項目を入力して計算してください。
+
+## 入力項目と単位
+
+### 年齢
+
+`idade`
+
+- `0` — \< 60 歳
+- `1` — 60 ～ 79 歳
+- `2` — ≥ 80 歳
+
+### ショック
+
+`choque`
+
+- `0` — ショックなし（収縮期血圧≥100かつ心拍数\<100）
+- `1` — 頻脈（収縮期血圧≥100かつ心拍数≥100）
+- `2` — 低血圧（収縮期血圧\<100 mmHg）
+
+### 併存疾患
+
+`comorb`
+
+- `0` — 重要なものなし
+- `2` — 心不全，虚血性心疾患，または他の重要な併存疾患
+- `3` — 腎不全，肝不全，または播種性がん
+
+### 内視鏡診断
+
+`diag`
+
+- `0` — Mallory-Weissまたは病変なし（出血徴候なし）
+- `1` — その他のすべての診断
+- `2` — 上部消化管腫瘍
+- `na` — 内視鏡未実施
+
+### 最近の出血徴候
+
+`estigma`
+
+- `0` — なし，または暗色点のみ（ヘマチン）
+- `2` — 上部消化管内の血液，付着血餅，露出血管，または噴出性出血
+- `na` — 内視鏡未実施
+
+## 方法の版
+
+Rockall 1996：内視鏡前0–7，完全版0–11；GBSと区別
+
+## 記載された計算式
+
+内視鏡前（0～7）：年齢（0～2）＋ショック（0～2）＋併存疾患（0，2または3）。
+
+完全版（0～11）：診断（0～2）と最近の出血徴候（0または2）を加える。
+
+## 限界・対象集団
+
+1996年のRockallスコアは、16歳を超える急性上部消化管出血のある人で研究されました。完全版は診断と内視鏡的徴候に依存し、内視鏡前の版にはその情報が含まれません。層別化は管理方針を検討する助けになりますが、個人の退院の安全性や再出血がないことを確定するものではありません。
+
+## 参考文献
+
+- [Rockall TA et al. Risk assessment after acute upper gastrointestinal haemorrhage. Gut, 1996.](https://doi.org/10.1136/gut.38.3.316)
+
+- [Stanley AJ et al. Comparison of risk scoring systems for patients presenting with upper gastrointestinal bleeding: international multicentre prospective study. BMJ, 2017.](https://doi.org/10.1136/bmj.i6432)
+
+## 技術テストの再現
+
+このリポジトリのルートディレクトリでnode test.cjsを実行すると、記録された合成ケースを再実行できます。元の入力、期待結果、許容誤差は保持されています。技術テストは臨床的検証を意味しません。
+
+```sh
+node test.cjs
+```
+
+tool.jsonには出典、版、確認範囲が記録されています。examples.jsonには合成入力と期待結果が保持され、results.jsonには実際に得られた結果が記録されています。
+
+[記録・参考文献](../tool.json) · [JavaScriptコード](../calculator.js) · [参照ケース](../examples.json) · [results.json](../results.json)
+
+## 確認状況と使用条件
+
+独立した臨床レビューは実施されていません。
+
+このインターフェースは独自に作成した翻訳であり、公式版や認証済みの版ではありません。独立した臨床レビュー、専門家による言語レビュー、評価尺度等の権利許諾の確認は実施されていません。
+
+式または分類の結果です。解釈、対応、適用可能性は専門家による評価と選択した出典に依存します。
+
+## ライセンスと帰属表示
+
+Apache-2.0はELUCENIAのコードにのみ適用されます。評価尺度等、出版物、翻訳、データの権利は、それぞれの権利者に帰属します。LICENSEとNOTICEを保持してください。
+
+ELUCENIA · Felipe Guedes · Copyright © 2026

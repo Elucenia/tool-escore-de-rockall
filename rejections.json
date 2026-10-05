@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field idade",
+    "input": {
+      "choque": "0",
+      "comorb": "0",
+      "diag": "na",
+      "estigma": "na"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field idade",
+    "input": {
+      "idade": "",
+      "choque": "0",
+      "comorb": "0",
+      "diag": "na",
+      "estigma": "na"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option idade",
+    "input": {
+      "idade": "__ELUCENIA_INVALID_OPTION__",
+      "choque": "0",
+      "comorb": "0",
+      "diag": "na",
+      "estigma": "na"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field choque",
+    "input": {
+      "idade": "0",
+      "comorb": "0",
+      "diag": "na",
+      "estigma": "na"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "choque"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field choque",
+    "input": {
+      "idade": "0",
+      "choque": "",
+      "comorb": "0",
+      "diag": "na",
+      "estigma": "na"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "choque"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option choque",
+    "input": {
+      "idade": "0",
+      "choque": "__ELUCENIA_INVALID_OPTION__",
+      "comorb": "0",
+      "diag": "na",
+      "estigma": "na"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "choque"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field comorb",
+    "input": {
+      "idade": "0",
+      "choque": "0",
+      "diag": "na",
+      "estigma": "na"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "comorb"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field comorb",
+    "input": {
+      "idade": "0",
+      "choque": "0",
+      "comorb": "",
+      "diag": "na",
+      "estigma": "na"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "comorb"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option comorb",
+    "input": {
+      "idade": "0",
+      "choque": "0",
+      "comorb": "__ELUCENIA_INVALID_OPTION__",
+      "diag": "na",
+      "estigma": "na"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "comorb"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field diag",
+    "input": {
+      "idade": "0",
+      "choque": "0",
+      "comorb": "0",
+      "estigma": "na"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "diag"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field diag",
+    "input": {
+      "idade": "0",
+      "choque": "0",
+      "comorb": "0",
+      "diag": "",
+      "estigma": "na"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "diag"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option diag",
+    "input": {
+      "idade": "0",
+      "choque": "0",
+      "comorb": "0",
+      "diag": "__ELUCENIA_INVALID_OPTION__",
+      "estigma": "na"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "diag"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field estigma",
+    "input": {
+      "idade": "0",
+      "choque": "0",
+      "comorb": "0",
+      "diag": "na"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "estigma"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field estigma",
+    "input": {
+      "idade": "0",
+      "choque": "0",
+      "comorb": "0",
+      "diag": "na",
+      "estigma": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "estigma"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option estigma",
+    "input": {
+      "idade": "0",
+      "choque": "0",
+      "comorb": "0",
+      "diag": "na",
+      "estigma": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "estigma"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

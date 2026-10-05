@@ -1,0 +1,511 @@
+{
+  "id": "escore-de-rockall",
+  "at": "2026-10-05T17:29:28.773Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/escore-de-rockall/calculator.js",
+    "bytes": 5937,
+    "sha256": "e7f79f8bcdf4f755dae390de16112043329952c91ccec5ad5fbcadfdb6abeba5"
+  },
+  "cases": [
+    {
+      "name": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+      "input": {
+        "idade": "0",
+        "choque": "0",
+        "comorb": "0",
+        "diag": "na",
+        "estigma": "na"
+      },
+      "obtained": {
+        "id": "escore-de-rockall",
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "Rockall pré-endoscópico (0 a 7)",
+        "raw": {
+          "pre": 0,
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "0",
+          "obtained": "0",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.pre",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pre",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "0",
+          "obtained": "0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "pontos",
+          "obtained": "pontos",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
+      "input": {
+        "idade": "2",
+        "choque": "2",
+        "comorb": "2",
+        "diag": "na",
+        "estigma": "na"
+      },
+      "obtained": {
+        "id": "escore-de-rockall",
+        "main": [
+          "6",
+          "pontos"
+        ],
+        "label": "Rockall pré-endoscópico (0 a 7)",
+        "raw": {
+          "pre": 6,
+          "score": 6
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.pre",
+          "expected": 6,
+          "obtained": 6,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pre",
+          "expected": 6,
+          "obtained": 6,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 6,
+          "obtained": 6,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "6",
+          "obtained": "6",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "pontos",
+          "obtained": "pontos",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+      "input": {
+        "idade": "1",
+        "choque": "0",
+        "comorb": "0",
+        "diag": "1",
+        "estigma": "0"
+      },
+      "obtained": {
+        "id": "escore-de-rockall",
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "Rockall completo (0 a 11)",
+        "raw": {
+          "pre": 1,
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.pre",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pre",
+          "expected": 1,
+          "obtained": 1,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "2",
+          "obtained": "2",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "pontos",
+          "obtained": "pontos",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+      "input": {
+        "idade": "1",
+        "choque": "1",
+        "comorb": "2",
+        "diag": "0",
+        "estigma": "0"
+      },
+      "obtained": {
+        "id": "escore-de-rockall",
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "Rockall completo (0 a 11)",
+        "raw": {
+          "pre": 4,
+          "score": 4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 4,
+          "obtained": 4,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pre",
+          "expected": 4,
+          "obtained": 4,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 4,
+          "obtained": 4,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "4",
+          "obtained": "4",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "pontos",
+          "obtained": "pontos",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+      "input": {
+        "idade": "2",
+        "choque": "2",
+        "comorb": "3",
+        "diag": "2",
+        "estigma": "2"
+      },
+      "obtained": {
+        "id": "escore-de-rockall",
+        "main": [
+          "11",
+          "pontos"
+        ],
+        "label": "Rockall completo (0 a 11)",
+        "raw": {
+          "pre": 7,
+          "score": 11
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 11,
+          "obtained": 11,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.pre",
+          "expected": 7,
+          "obtained": 7,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pre",
+          "expected": 7,
+          "obtained": 7,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 11,
+          "obtained": 11,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "11",
+          "obtained": "11",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "pontos",
+          "obtained": "pontos",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 19,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

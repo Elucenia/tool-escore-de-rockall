@@ -1,6 +1,16 @@
 [
   {
-    "label": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+    "id": "escore-de-rockall",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+    "originalInput": {
+      "idade": "0",
+      "choque": "0",
+      "comorb": "0",
+      "diag": "na",
+      "estigma": "na"
+    },
     "input": {
       "idade": "0",
       "choque": "0",
@@ -16,17 +26,38 @@
       "level": "low",
       "verdict": "pré-endoscópico 0"
     },
+    "recordedResult": {
+      "main": [
+        "0",
+        "pontos"
+      ],
+      "label": "Rockall pré-endoscópico (0 a 7)",
+      "raw": {
+        "pre": 0,
+        "score": 0
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "escore-de-rockall",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
     "originalInput": {
-      "idade": "0",
-      "choque": "0",
-      "comorb": "0",
+      "idade": "2",
+      "choque": "2",
+      "comorb": "2",
       "diag": "na",
       "estigma": "na"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
     "input": {
       "idade": "2",
       "choque": "2",
@@ -40,17 +71,38 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "idade": "2",
-      "choque": "2",
-      "comorb": "2",
-      "diag": "na",
-      "estigma": "na"
+    "recordedResult": {
+      "main": [
+        "6",
+        "pontos"
+      ],
+      "label": "Rockall pré-endoscópico (0 a 7)",
+      "raw": {
+        "pre": 6,
+        "score": 6
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+    "id": "escore-de-rockall",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+    "originalInput": {
+      "idade": "1",
+      "choque": "0",
+      "comorb": "0",
+      "diag": "1",
+      "estigma": "0"
+    },
     "input": {
       "idade": "1",
       "choque": "0",
@@ -65,17 +117,38 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "idade": "1",
-      "choque": "0",
-      "comorb": "0",
-      "diag": "1",
-      "estigma": "0"
+    "recordedResult": {
+      "main": [
+        "2",
+        "pontos"
+      ],
+      "label": "Rockall completo (0 a 11)",
+      "raw": {
+        "pre": 1,
+        "score": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+    "id": "escore-de-rockall",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+    "originalInput": {
+      "idade": "1",
+      "choque": "1",
+      "comorb": "2",
+      "diag": "0",
+      "estigma": "0"
+    },
     "input": {
       "idade": "1",
       "choque": "1",
@@ -89,17 +162,38 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "idade": "1",
-      "choque": "1",
-      "comorb": "2",
-      "diag": "0",
-      "estigma": "0"
+    "recordedResult": {
+      "main": [
+        "4",
+        "pontos"
+      ],
+      "label": "Rockall completo (0 a 11)",
+      "raw": {
+        "pre": 4,
+        "score": 4
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+    "id": "escore-de-rockall",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+    "originalInput": {
+      "idade": "2",
+      "choque": "2",
+      "comorb": "3",
+      "diag": "2",
+      "estigma": "2"
+    },
     "input": {
       "idade": "2",
       "choque": "2",
@@ -114,13 +208,24 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "idade": "2",
-      "choque": "2",
-      "comorb": "3",
-      "diag": "2",
-      "estigma": "2"
+    "recordedResult": {
+      "main": [
+        "11",
+        "pontos"
+      ],
+      "label": "Rockall completo (0 a 11)",
+      "raw": {
+        "pre": 7,
+        "score": 11
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

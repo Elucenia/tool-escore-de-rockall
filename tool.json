@@ -5,6 +5,7 @@
     "short": "Risco de óbito na hemorragia digestiva alta",
     "desc": "Calcule o escore de Rockall na hemorragia digestiva alta: versão pré-endoscópica (0 a 7) e completa após a endoscopia (0 a 11), para risco de óbito e ressangramento.",
     "lead": "Estima o risco de morte e de ressangramento na hemorragia digestiva alta. A parte clínica (idade, choque, comorbidades) dá o escore pré-endoscópico; somando diagnóstico e estigmas, obtém-se o escore completo.",
+    "kind": "Calculadora",
     "spec": [
       "endoscopia",
       "gastroenterologia",
@@ -75,34 +76,6 @@
       ]
     ],
     "formula": "<p><strong>Pré-endoscópico (0 a 7):</strong> idade (0 a 2) + choque (0 a 2) + comorbidades (0, 2 ou 3).</p><p><strong>Completo (0 a 11):</strong> soma também o diagnóstico (0 a 2) e os estigmas de sangramento recente (0 ou 2).</p>",
-    "table": [
-      [
-        "Escore",
-        "Interpretação"
-      ],
-      [
-        "Pré-endoscópico 0",
-        "Baixo risco (15% dos pacientes na apresentação)"
-      ],
-      [
-        "Pré-endoscópico ≥ 4",
-        "Corte ótimo para prever óbito (Stanley 2017)"
-      ],
-      [
-        "Completo ≤ 2",
-        "Baixo risco de ressangramento e risco de óbito desprezível: alta precoce"
-      ],
-      [
-        "Completo ≥ 5",
-        "Corte ótimo para prever óbito (Stanley 2017)"
-      ]
-    ],
-    "tips": [
-      "O Rockall foi criado para prever <strong>mortalidade</strong>; para decidir alta sem endoscopia, o Glasgow-Blatchford é mais preciso.",
-      "O escore completo ≤ 2 identificou 26% dos pacientes após a endoscopia como candidatos à alta precoce no estudo original.",
-      "Nenhum escore previu bem o ressangramento no estudo internacional de Stanley (2017): mantenha vigilância clínica.",
-      "Hemoglobina e uso de anticoagulante não entram no escore, mas mudam a conduta: corrija a anticoagulação e transfunda conforme o alvo."
-    ],
     "sources": [
       [
         "Rockall TA et al. Risk assessment after acute upper gastrointestinal haemorrhage. Gut, 1996.",
@@ -199,9 +172,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -210,17 +180,469 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:33:44.210Z",
+      "total": 189,
+      "passed": 189,
+      "sourceRowCount": 189,
+      "uniqueApiInputCount": 189,
+      "sourceContextCount": 189,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "c451a18c886289ce9fdbf6c94027d0d8e5bd33ebe3a7d8ba6f95674ac18e2040",
+        "total": 189,
+        "bankRowCount": 189,
+        "uniqueApiInputCount": 189,
+        "sourceContextCount": 189,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/root-six-independent-expectations-final29.json",
+            "sha256": "92f70c18f7b9f7b96089197af3288c3e7695f1c8e219ef036d4f0989bddfb125"
+          },
+          {
+            "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+            "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/root-six-independent-source-check-final29.json",
+          "sha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043"
+        }
+      },
+      "inputIdentity": "Exact complete immutable API input objects; not execution/runtime counts",
+      "scope": "All162 complete selected-point combinations plus27 initialmodel combinations; not mixedpartialendoscopy",
+      "sources": [
+        {
+          "review": {
+            "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+            "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+          },
+          "item": {
+            "id": "escore-de-rockall",
+            "edition": "Rockall1996 TableIII printed318, original scan in official PMC",
+            "reads": [
+              {
+                "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/76e0/1383057/60a273ed2fc3/gut00504-0026.png",
+                "read": "Original printed318 TableIII and accompanying model prose visually read in browser at original resolution; screenshot records targeted table.",
+                "artifact": {
+                  "file": "root-source29-primary-pdfs/rockall1996-table3-browser.jpg",
+                  "sha256": "fee3e95329967f8f510da70cb41d0e7850ea81d8860f09033204d6f794553669",
+                  "bytes": 130254
+                }
+              },
+              {
+                "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1383057/",
+                "read": "Original abstract and identity, initial pre-endoscopic model and complete model described."
+              }
+            ],
+            "constants": {
+              "age": [
+                0,
+                1,
+                2
+              ],
+              "shock": [
+                0,
+                1,
+                2
+              ],
+              "comorbidity": [
+                0,
+                2,
+                3
+              ],
+              "diagnosis": [
+                0,
+                1,
+                2
+              ],
+              "stigmata": [
+                0,
+                2
+              ],
+              "preMaximum": 7,
+              "fullMaximum": 11
+            },
+            "limitations": [
+              "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+              "Original TableIII printed318 uses systolicBP ≥100 for codes0/1 and <100 for code2. The original archived image was initially misread in the narrative; independent visual peer corrected the glyph. Local ≥100 agrees with that source boundary. This point-code proof still does not approve clinical ascertainment or all rubrics. Both endoscopic fields must be absent for the pre-endoscopic model; the mixed-partial form contract is assessed separately. Actual discharge, bleeding and mortality thresholds are not certified."
+            ]
+          },
+          "originalSourceReview": {
+            "file": "root-six-primary-source-review-final29.json",
+            "sha256": "5bc754345b3db4ae9521890531cd0e244684bfd168ab88b0b882045fc7b7f036"
+          },
+          "erratum": "Rockall original>100 narrative is retained in the original review; primaryR2 corrects it to≥100 without changing oracle, inputs or code."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/root-six-independent-source-check-final29.json",
+      "evidenceSha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043",
+      "independentPeer": {
+        "status": "reviewed",
+        "file": "reports/review-20261003/root-six-independent-peer-publication-final29-r2.json",
+        "sha256": "9a364220970a26f43c0d738bb7f1b1dfe96d33f064478c7d6c830c1dc0f72518",
+        "scope": "Independent numeric/source-scope peer only",
+        "factualSourceAmendment": {
+          "file": "reports/review-20261003/root-six-publication-own-source-review-final29-r2.json",
+          "sha256": "c5b320651855564578dbb871a91bd9770c09594497b40ea0560be84d75d8139c"
+        }
+      },
+      "metadataPackagingPeer": {
+        "status": "reviewed",
+        "file": "reports/review-20261003/root-six-bank-packaging-peer-final29-r2.json",
+        "sha256": "e1bfe5287b4cc1defcce6c29ecc9d901cf9b5be19aeb047499da56273b9feb69",
+        "scope": "Independent technical bank/helper packaging and frozen raw-output replay; no clinical, professional-language, source-rights or full-method approval.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "originalSourceExecutions": 1701,
+      "freshPreparationSampleExecutions": 12,
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/escore-de-rockall/calculator.js",
+          "sha256": "e7f79f8bcdf4f755dae390de16112043329952c91ccec5ad5fbcadfdb6abeba5",
+          "bytes": 5937
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/escore-de-rockall/calculator.js",
+          "sha256": "e7f79f8bcdf4f755dae390de16112043329952c91ccec5ad5fbcadfdb6abeba5",
+          "bytes": 5937
+        },
+        {
+          "file": "apps/command-center/private/tool-code/escore-de-rockall/calculator.js",
+          "sha256": "e7f79f8bcdf4f755dae390de16112043329952c91ccec5ad5fbcadfdb6abeba5",
+          "bytes": 5937
+        }
+      ],
+      "qualifications": [
+        "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+        "Original TableIII printed318 uses systolicBP ≥100 for codes0/1 and <100 for code2. The original archived image was initially misread in the narrative; independent visual peer corrected the glyph. Local ≥100 agrees with that source boundary. This point-code proof still does not approve clinical ascertainment or all rubrics. Both endoscopic fields must be absent for the pre-endoscopic model; the mixed-partial form contract is assessed separately. Actual discharge, bleeding and mortality thresholds are not certified.",
+        "No clinical categories/main/severity/advice/diagnosis/prognostic performance/source-rights or professional-language approval. Full numeric observations are historical frozen Node/VM/Chromium; this preparation adds only bounded fresh Node samples.",
+        "Ottawa primary Boolean result and separately counted supplied true findings are not a validated point-risk score. Rockall pre-score is the source point-code sum; preEndoscopic context is not an exposed clinical classifier.",
+        "Whole catalogues are not staged; only these two evidence leaves per ID and complete banks are owned. Source28/six-neuromotor29 helper branches and counters must be composed separately."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Rockall 1996:préendoscópico 0–7 ecompleto 0–11; sem confusão com GBS",
+    "implementationVersion": "escore-de-rockall@native-2026-10-03+e7f79f8bcdf4",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1383057/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Pré-endoscópico (0 a 7): idade (0 a 2) + choque (0 a 2) + comorbidades (0, 2 ou 3). Completo (0 a 11): soma também o diagnóstico (0 a 2) e os estigmas de sangramento recente (0 ou 2).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "idade",
+            "label": "Idade",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "&lt; 60 anos",
+              "1": "60 a 79 anos",
+              "2": "≥ 80 anos"
+            }
+          },
+          {
+            "key": "choque",
+            "label": "Choque",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Sem choque (PAS ≥ 100 e FC &lt; 100)",
+              "1": "Taquicardia (PAS ≥ 100 e FC ≥ 100)",
+              "2": "Hipotensão (PAS &lt; 100 mmHg)"
+            }
+          },
+          {
+            "key": "comorb",
+            "label": "Comorbidades",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Nenhuma importante",
+              "2": "Insuficiência cardíaca, cardiopatia isquêmica ou outra comorbidade importante",
+              "3": "Insuficiência renal, insuficiência hepática ou câncer disseminado"
+            }
+          },
+          {
+            "key": "diag",
+            "label": "Diagnóstico endoscópico",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Mallory-Weiss ou nenhuma lesão (sem estigmas)",
+              "1": "Todos os outros diagnósticos",
+              "2": "Neoplasia do trato digestivo alto",
+              "na": "Endoscopia ainda não realizada"
+            }
+          },
+          {
+            "key": "estigma",
+            "label": "Estigmas de sangramento recente",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Nenhum ou só ponto escuro (hematina)",
+              "2": "Sangue no trato alto, coágulo aderido, vaso visível ou em jato",
+              "na": "Endoscopia ainda não realizada"
+            }
+          }
+        ],
+        "hash": "6e46404758c44c21c85094739bf1d1a6ffde6204d185ec8d327ff3458fcd7d2d"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Rockall TA et al. Risk assessment after acute upper gastrointestinal haemorrhage. Gut, 1996.",
+          "url": "https://doi.org/10.1136/gut.38.3.316",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Risk assessment after acute upper gastrointestinal haemorrhage.",
+            "year": "1996",
+            "firstPublicationDate": "1996-03-01",
+            "doi": "10.1136/gut.38.3.316",
+            "pmid": "8675081",
+            "pmcid": "PMC1383057",
+            "journal": "Gut",
+            "authors": "Rockall TA, Logan RF, Devlin HB, Northfield TC."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1383057/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "f0e6b6fe4432dddc3af001589a7e7b493c38841c92b7d55f342a3210443f9a22",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Stanley AJ et al. Comparison of risk scoring systems for patients presenting with upper gastrointestinal bleeding: international multicentre prospective study. BMJ, 2017.",
+          "url": "https://doi.org/10.1136/bmj.i6432",
+          "class": "primary-publication-full-text-retrieved",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": true,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Comparison of risk scoring systems for patients presenting with upper gastrointestinal bleeding: international multicentre prospective study.",
+            "year": "2017",
+            "firstPublicationDate": "2017-01-04",
+            "doi": "10.1136/bmj.i6432",
+            "pmid": "28053181",
+            "pmcid": "PMC5217768",
+            "journal": "BMJ (Clinical research ed.)",
+            "authors": "Stanley AJ, Laine L, Dalton HR, Ngu JH, Schultz M, Abazi R, Zakko L, Thornton S, Wilkinson K, Khor CJ, Murray IA, Laursen SB, International Gastrointestinal Bleeding Consortium."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5217768/",
+          "abstractAvailable": true,
+          "fullTextSha256": "1fad8052f03890fbd843cc323892521b1c57643b15d76adc381e0ef926e0c29d",
+          "abstractSha256": "32ce07c6b6981a53e559b7b64e1b3b2156762d46848fd100b6178d4f2e10de34",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:33:44.210Z",
+        "total": 189,
+        "passed": 189,
+        "sourceRowCount": 189,
+        "uniqueApiInputCount": 189,
+        "sourceContextCount": 189,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "c451a18c886289ce9fdbf6c94027d0d8e5bd33ebe3a7d8ba6f95674ac18e2040",
+          "total": 189,
+          "bankRowCount": 189,
+          "uniqueApiInputCount": 189,
+          "sourceContextCount": 189,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/root-six-independent-expectations-final29.json",
+              "sha256": "92f70c18f7b9f7b96089197af3288c3e7695f1c8e219ef036d4f0989bddfb125"
+            },
+            {
+              "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+              "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/root-six-independent-source-check-final29.json",
+            "sha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043"
+          }
+        },
+        "inputIdentity": "Exact complete immutable API input objects; not execution/runtime counts",
+        "scope": "All162 complete selected-point combinations plus27 initialmodel combinations; not mixedpartialendoscopy",
+        "sources": [
+          {
+            "review": {
+              "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+              "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+            },
+            "item": {
+              "id": "escore-de-rockall",
+              "edition": "Rockall1996 TableIII printed318, original scan in official PMC",
+              "reads": [
+                {
+                  "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/76e0/1383057/60a273ed2fc3/gut00504-0026.png",
+                  "read": "Original printed318 TableIII and accompanying model prose visually read in browser at original resolution; screenshot records targeted table.",
+                  "artifact": {
+                    "file": "root-source29-primary-pdfs/rockall1996-table3-browser.jpg",
+                    "sha256": "fee3e95329967f8f510da70cb41d0e7850ea81d8860f09033204d6f794553669",
+                    "bytes": 130254
+                  }
+                },
+                {
+                  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1383057/",
+                  "read": "Original abstract and identity, initial pre-endoscopic model and complete model described."
+                }
+              ],
+              "constants": {
+                "age": [
+                  0,
+                  1,
+                  2
+                ],
+                "shock": [
+                  0,
+                  1,
+                  2
+                ],
+                "comorbidity": [
+                  0,
+                  2,
+                  3
+                ],
+                "diagnosis": [
+                  0,
+                  1,
+                  2
+                ],
+                "stigmata": [
+                  0,
+                  2
+                ],
+                "preMaximum": 7,
+                "fullMaximum": 11
+              },
+              "limitations": [
+                "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+                "Original TableIII printed318 uses systolicBP ≥100 for codes0/1 and <100 for code2. The original archived image was initially misread in the narrative; independent visual peer corrected the glyph. Local ≥100 agrees with that source boundary. This point-code proof still does not approve clinical ascertainment or all rubrics. Both endoscopic fields must be absent for the pre-endoscopic model; the mixed-partial form contract is assessed separately. Actual discharge, bleeding and mortality thresholds are not certified."
+              ]
+            },
+            "originalSourceReview": {
+              "file": "root-six-primary-source-review-final29.json",
+              "sha256": "5bc754345b3db4ae9521890531cd0e244684bfd168ab88b0b882045fc7b7f036"
+            },
+            "erratum": "Rockall original>100 narrative is retained in the original review; primaryR2 corrects it to≥100 without changing oracle, inputs or code."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/root-six-independent-source-check-final29.json",
+        "evidenceSha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043",
+        "independentPeer": {
+          "status": "reviewed",
+          "file": "reports/review-20261003/root-six-independent-peer-publication-final29-r2.json",
+          "sha256": "9a364220970a26f43c0d738bb7f1b1dfe96d33f064478c7d6c830c1dc0f72518",
+          "scope": "Independent numeric/source-scope peer only",
+          "factualSourceAmendment": {
+            "file": "reports/review-20261003/root-six-publication-own-source-review-final29-r2.json",
+            "sha256": "c5b320651855564578dbb871a91bd9770c09594497b40ea0560be84d75d8139c"
+          }
+        },
+        "metadataPackagingPeer": {
+          "status": "reviewed",
+          "file": "reports/review-20261003/root-six-bank-packaging-peer-final29-r2.json",
+          "sha256": "e1bfe5287b4cc1defcce6c29ecc9d901cf9b5be19aeb047499da56273b9feb69",
+          "scope": "Independent technical bank/helper packaging and frozen raw-output replay; no clinical, professional-language, source-rights or full-method approval.",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "originalSourceExecutions": 1701,
+        "freshPreparationSampleExecutions": 12,
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/escore-de-rockall/calculator.js",
+            "sha256": "e7f79f8bcdf4f755dae390de16112043329952c91ccec5ad5fbcadfdb6abeba5",
+            "bytes": 5937
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/escore-de-rockall/calculator.js",
+            "sha256": "e7f79f8bcdf4f755dae390de16112043329952c91ccec5ad5fbcadfdb6abeba5",
+            "bytes": 5937
+          },
+          {
+            "file": "apps/command-center/private/tool-code/escore-de-rockall/calculator.js",
+            "sha256": "e7f79f8bcdf4f755dae390de16112043329952c91ccec5ad5fbcadfdb6abeba5",
+            "bytes": 5937
+          }
+        ],
+        "qualifications": [
+          "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+          "Original TableIII printed318 uses systolicBP ≥100 for codes0/1 and <100 for code2. The original archived image was initially misread in the narrative; independent visual peer corrected the glyph. Local ≥100 agrees with that source boundary. This point-code proof still does not approve clinical ascertainment or all rubrics. Both endoscopic fields must be absent for the pre-endoscopic model; the mixed-partial form contract is assessed separately. Actual discharge, bleeding and mortality thresholds are not certified.",
+          "No clinical categories/main/severity/advice/diagnosis/prognostic performance/source-rights or professional-language approval. Full numeric observations are historical frozen Node/VM/Chromium; this preparation adds only bounded fresh Node samples.",
+          "Ottawa primary Boolean result and separately counted supplied true findings are not a validated point-risk score. Rockall pre-score is the source point-code sum; preEndoscopic context is not an exposed clinical classifier.",
+          "Whole catalogues are not staged; only these two evidence leaves per ID and complete banks are owned. Source28/six-neuromotor29 helper branches and counters must be composed separately."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "e7f79f8bcdf4f755dae390de16112043329952c91ccec5ad5fbcadfdb6abeba5"
+    },
+    "limits": "O Rockall de 1996 foi estudado em pessoas acima de 16 anos com hemorragia digestiva alta aguda. A versão completa depende de diagnóstico e estigmas endoscópicos; a versão pré-endoscópica não contém essa informação. A estratificação ajuda a considerar manejo, mas não determina segurança individual de alta ou ausência de ressangramento.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.909Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Todas as exclusões e tabelas pré/completa não constam do resumo; possibilidade de alta descrita como consideração, não garantia."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escore-de-rockall/calculator.js",
+    "bytes": 5937,
+    "sha256": "e7f79f8bcdf4f755dae390de16112043329952c91ccec5ad5fbcadfdb6abeba5"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "1f15a95e1fe7a8ac942220211dc08bf221789e0c298a6f10c1ca56c0f5d58dad",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "826538bc40966f2bc1bd079b6cd337d377b9a3a9253892ef7d7413fd6c26ccf8",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "826538bc40966f2bc1bd079b6cd337d377b9a3a9253892ef7d7413fd6c26ccf8",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
