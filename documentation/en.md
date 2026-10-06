@@ -96,3 +96,48 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Pre-endoscopic Rockall 0: low risk
+
+Complete with the diagnosis and stigmata after endoscopy for the full score.
+
+
+### 2
+
+Pre-endoscopic Rockall ≥ 4: increased risk of death
+
+Complete with the diagnosis and stigmata after endoscopy for the full score.
+
+
+### 3
+
+Complete Rockall ≤ 2: low risk of rebleeding and death
+
+| Result details | |
+| --- | --- |
+| Pre-endoscopic part | 1 points |
+
+
+### 4
+
+Complete Rockall from 3 to 4: intermediate risk
+
+| Result details | |
+| --- | --- |
+| Pre-endoscopic part | 4 points |
+
+
+### 5
+
+Complete Rockall ≥ 5: high risk of death
+
+| Result details | |
+| --- | --- |
+| Pre-endoscopic part | 7 points |
+

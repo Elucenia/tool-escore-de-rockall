@@ -96,3 +96,48 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Präendoskopischer Rockall 0: geringes Risiko
+
+Vervollständigen Sie für den vollständigen Score die Diagnose und die Stigmata nach der Endoskopie.
+
+
+### 2
+
+Präendoskopischer Rockall ≥ 4: erhöhtes Todesrisiko
+
+Vervollständigen Sie für den vollständigen Score die Diagnose und die Stigmata nach der Endoskopie.
+
+
+### 3
+
+Vollständiger Rockall ≤ 2: geringes Risiko für erneute Blutung und Tod
+
+| Ergebnisdetails | |
+| --- | --- |
+| Präendoskopischer Teil | 1 Punkte |
+
+
+### 4
+
+Vollständiger Rockall 3 bis 4: intermediäres Risiko
+
+| Ergebnisdetails | |
+| --- | --- |
+| Präendoskopischer Teil | 4 Punkte |
+
+
+### 5
+
+Vollständiger Rockall ≥ 5: hohes Todesrisiko
+
+| Ergebnisdetails | |
+| --- | --- |
+| Präendoskopischer Teil | 7 Punkte |
+

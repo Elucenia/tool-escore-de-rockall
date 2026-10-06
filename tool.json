@@ -333,7 +333,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Rockall 1996:préendoscópico 0–7 ecompleto 0–11; sem confusão com GBS",
-    "implementationVersion": "escore-de-rockall@native-2026-10-03+e7f79f8bcdf4",
+    "implementationVersion": "escore-de-rockall@native-2026-10-05+de6312367a53",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1383057/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -607,7 +607,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "e7f79f8bcdf4f755dae390de16112043329952c91ccec5ad5fbcadfdb6abeba5"
+      "implementationHash": "de6312367a53946125b5c48e6841ccdbbbb2a8ecb1e1ecf13a0dade1efa98a84",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escore-de-rockall@native-2026-10-03+e7f79f8bcdf4",
+          "previousImplementationHash": "e7f79f8bcdf4f755dae390de16112043329952c91ccec5ad5fbcadfdb6abeba5",
+          "implementationHash": "de6312367a53946125b5c48e6841ccdbbbb2a8ecb1e1ecf13a0dade1efa98a84",
+          "scientificBodySha256": "6b6b3a099cf9bc7b6687eb473b0a7cb05fcce18aa6ade9c318a7dfaaea90f857",
+          "metadataContractHash": "6e46404758c44c21c85094739bf1d1a6ffde6204d185ec8d327ff3458fcd7d2d",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O Rockall de 1996 foi estudado em pessoas acima de 16 anos com hemorragia digestiva alta aguda. A versão completa depende de diagnóstico e estigmas endoscópicos; a versão pré-endoscópica não contém essa informação. A estratificação ajuda a considerar manejo, mas não determina segurança individual de alta ou ausência de ressangramento.",
     "sourceLimitEvidence": {
@@ -626,20 +654,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escore-de-rockall/calculator.js",
-    "bytes": 5937,
-    "sha256": "e7f79f8bcdf4f755dae390de16112043329952c91ccec5ad5fbcadfdb6abeba5"
+    "bytes": 6142,
+    "sha256": "de6312367a53946125b5c48e6841ccdbbbb2a8ecb1e1ecf13a0dade1efa98a84"
   },
-  "sourceToolSha256": "1f15a95e1fe7a8ac942220211dc08bf221789e0c298a6f10c1ca56c0f5d58dad",
+  "sourceToolSha256": "676559306530045037151ff7fcfb9b8934319d8b27fb0a4a1fa8e3712e82a2e0",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "826538bc40966f2bc1bd079b6cd337d377b9a3a9253892ef7d7413fd6c26ccf8",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "826538bc40966f2bc1bd079b6cd337d377b9a3a9253892ef7d7413fd6c26ccf8",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

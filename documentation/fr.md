@@ -96,3 +96,48 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Rockall pré-endoscopique 0 : faible risque
+
+Complétez avec le diagnostic et les stigmates après l’endoscopie pour le score complet.
+
+
+### 2
+
+Rockall pré-endoscopique ≥ 4 : risque accru de décès
+
+Complétez avec le diagnostic et les stigmates après l’endoscopie pour le score complet.
+
+
+### 3
+
+Rockall complet ≤ 2 : faible risque de resaignement et de décès
+
+| Détails du résultat | |
+| --- | --- |
+| Partie pré-endoscopique | 1 points |
+
+
+### 4
+
+Rockall complet de 3 à 4 : risque intermédiaire
+
+| Détails du résultat | |
+| --- | --- |
+| Partie pré-endoscopique | 4 points |
+
+
+### 5
+
+Rockall complet ≥ 5 : risque élevé de décès
+
+| Détails du résultat | |
+| --- | --- |
+| Partie pré-endoscopique | 7 points |
+

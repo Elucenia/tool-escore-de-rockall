@@ -96,3 +96,48 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Rockall preendoscópico 0: riesgo bajo
+
+Complete con el diagnóstico y los estigmas después de la endoscopia para el puntaje completo.
+
+
+### 2
+
+Rockall preendoscópico ≥ 4: riesgo aumentado de muerte
+
+Complete con el diagnóstico y los estigmas después de la endoscopia para el puntaje completo.
+
+
+### 3
+
+Rockall completo ≤ 2: bajo riesgo de resangrado y muerte
+
+| Detalles del resultado | |
+| --- | --- |
+| Parte preendoscópica | 1 puntos |
+
+
+### 4
+
+Rockall completo de 3 a 4: riesgo intermedio
+
+| Detalles del resultado | |
+| --- | --- |
+| Parte preendoscópica | 4 puntos |
+
+
+### 5
+
+Rockall completo ≥ 5: alto riesgo de muerte
+
+| Detalles del resultado | |
+| --- | --- |
+| Parte preendoscópica | 7 puntos |
+

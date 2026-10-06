@@ -1,0 +1,1228 @@
+{
+  "id": "escore-de-rockall",
+  "implementationVersion": "escore-de-rockall@native-2026-10-05+de6312367a53",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rockall pré-endoscópico 0: baixo risco",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Complete com o diagnóstico e os estigmas após a endoscopia para o escore completo.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rockall pré-endoscópico ≥ 4: risco aumentado de óbito",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Complete com o diagnóstico e os estigmas após a endoscopia para o escore completo.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Parte pré-endoscópica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rockall completo ≤ 2: baixo risco de ressangramento e óbito",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Parte pré-endoscópica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "4 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rockall completo de 3 a 4: risco intermediário",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Parte pré-endoscópica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "7 pontos",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rockall completo ≥ 5: alto risco de óbito",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Pre-endoscopic Rockall 0: low risk",
+            "locale": "en",
+            "template": "documented-authored-a63b8c4ee3f2468270a9"
+          },
+          "note": {
+            "text": "Complete with the diagnosis and stigmata after endoscopy for the full score.",
+            "locale": "en",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Pre-endoscopic Rockall ≥ 4: increased risk of death",
+            "locale": "en",
+            "template": "documented-authored-9bc98e966bf63569f3fc"
+          },
+          "note": {
+            "text": "Complete with the diagnosis and stigmata after endoscopy for the full score.",
+            "locale": "en",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pre-endoscopic part",
+                "locale": "en",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "1 points",
+                "locale": "en",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Complete Rockall ≤ 2: low risk of rebleeding and death",
+            "locale": "en",
+            "template": "documented-authored-639e48dd20782e40c718"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pre-endoscopic part",
+                "locale": "en",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "4 points",
+                "locale": "en",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Complete Rockall from 3 to 4: intermediate risk",
+            "locale": "en",
+            "template": "documented-authored-ed314dcac398994be281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Pre-endoscopic part",
+                "locale": "en",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "7 points",
+                "locale": "en",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Complete Rockall ≥ 5: high risk of death",
+            "locale": "en",
+            "template": "documented-authored-f3b673c0b189d18556e4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rockall preendoscópico 0: riesgo bajo",
+            "locale": "es",
+            "template": "documented-authored-a63b8c4ee3f2468270a9"
+          },
+          "note": {
+            "text": "Complete con el diagnóstico y los estigmas después de la endoscopia para el puntaje completo.",
+            "locale": "es",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rockall preendoscópico ≥ 4: riesgo aumentado de muerte",
+            "locale": "es",
+            "template": "documented-authored-9bc98e966bf63569f3fc"
+          },
+          "note": {
+            "text": "Complete con el diagnóstico y los estigmas después de la endoscopia para el puntaje completo.",
+            "locale": "es",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Parte preendoscópica",
+                "locale": "es",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "1 puntos",
+                "locale": "es",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rockall completo ≤ 2: bajo riesgo de resangrado y muerte",
+            "locale": "es",
+            "template": "documented-authored-639e48dd20782e40c718"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Parte preendoscópica",
+                "locale": "es",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "4 puntos",
+                "locale": "es",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rockall completo de 3 a 4: riesgo intermedio",
+            "locale": "es",
+            "template": "documented-authored-ed314dcac398994be281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Parte preendoscópica",
+                "locale": "es",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "7 puntos",
+                "locale": "es",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rockall completo ≥ 5: alto riesgo de muerte",
+            "locale": "es",
+            "template": "documented-authored-f3b673c0b189d18556e4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rockall pré-endoscopique 0 : faible risque",
+            "locale": "fr",
+            "template": "documented-authored-a63b8c4ee3f2468270a9"
+          },
+          "note": {
+            "text": "Complétez avec le diagnostic et les stigmates après l’endoscopie pour le score complet.",
+            "locale": "fr",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rockall pré-endoscopique ≥ 4 : risque accru de décès",
+            "locale": "fr",
+            "template": "documented-authored-9bc98e966bf63569f3fc"
+          },
+          "note": {
+            "text": "Complétez avec le diagnostic et les stigmates après l’endoscopie pour le score complet.",
+            "locale": "fr",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Partie pré-endoscopique",
+                "locale": "fr",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "1 points",
+                "locale": "fr",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rockall complet ≤ 2 : faible risque de resaignement et de décès",
+            "locale": "fr",
+            "template": "documented-authored-639e48dd20782e40c718"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Partie pré-endoscopique",
+                "locale": "fr",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "4 points",
+                "locale": "fr",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rockall complet de 3 à 4 : risque intermédiaire",
+            "locale": "fr",
+            "template": "documented-authored-ed314dcac398994be281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Partie pré-endoscopique",
+                "locale": "fr",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "7 points",
+                "locale": "fr",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rockall complet ≥ 5 : risque élevé de décès",
+            "locale": "fr",
+            "template": "documented-authored-f3b673c0b189d18556e4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Präendoskopischer Rockall 0: geringes Risiko",
+            "locale": "de",
+            "template": "documented-authored-a63b8c4ee3f2468270a9"
+          },
+          "note": {
+            "text": "Vervollständigen Sie für den vollständigen Score die Diagnose und die Stigmata nach der Endoskopie.",
+            "locale": "de",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Präendoskopischer Rockall ≥ 4: erhöhtes Todesrisiko",
+            "locale": "de",
+            "template": "documented-authored-9bc98e966bf63569f3fc"
+          },
+          "note": {
+            "text": "Vervollständigen Sie für den vollständigen Score die Diagnose und die Stigmata nach der Endoskopie.",
+            "locale": "de",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Präendoskopischer Teil",
+                "locale": "de",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "1 Punkte",
+                "locale": "de",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Vollständiger Rockall ≤ 2: geringes Risiko für erneute Blutung und Tod",
+            "locale": "de",
+            "template": "documented-authored-639e48dd20782e40c718"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Präendoskopischer Teil",
+                "locale": "de",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "4 Punkte",
+                "locale": "de",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Vollständiger Rockall 3 bis 4: intermediäres Risiko",
+            "locale": "de",
+            "template": "documented-authored-ed314dcac398994be281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Präendoskopischer Teil",
+                "locale": "de",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "7 Punkte",
+                "locale": "de",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Vollständiger Rockall ≥ 5: hohes Todesrisiko",
+            "locale": "de",
+            "template": "documented-authored-f3b673c0b189d18556e4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rockall pre-endoscopico 0: rischio basso",
+            "locale": "it",
+            "template": "documented-authored-a63b8c4ee3f2468270a9"
+          },
+          "note": {
+            "text": "Completare con la diagnosi e gli stigma dopo l’endoscopia per il punteggio completo.",
+            "locale": "it",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rockall pre-endoscopico ≥ 4: rischio aumentato di মৃত্যু",
+            "locale": "it",
+            "template": "documented-authored-9bc98e966bf63569f3fc"
+          },
+          "note": {
+            "text": "Completare con la diagnosi e gli stigma dopo l’endoscopia per il punteggio completo.",
+            "locale": "it",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Parte pre-endoscopica",
+                "locale": "it",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "1 punti",
+                "locale": "it",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rockall completo ≤ 2: basso rischio di risanguinamento e di morte",
+            "locale": "it",
+            "template": "documented-authored-639e48dd20782e40c718"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Parte pre-endoscopica",
+                "locale": "it",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "4 punti",
+                "locale": "it",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rockall completo da 3 a 4: rischio intermedio",
+            "locale": "it",
+            "template": "documented-authored-ed314dcac398994be281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Parte pre-endoscopica",
+                "locale": "it",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "7 punti",
+                "locale": "it",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rockall completo ≥ 5: alto rischio di morte",
+            "locale": "it",
+            "template": "documented-authored-f3b673c0b189d18556e4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "روكال قبل التنظير 0: خطر منخفض",
+            "locale": "ar",
+            "template": "documented-authored-a63b8c4ee3f2468270a9"
+          },
+          "note": {
+            "text": "استكمل التشخيص والعلامات بعد التنظير الداخلي للحصول على الدرجة الكاملة.",
+            "locale": "ar",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "روكال قبل التنظير ≥ 4: خطر متزايد للوفاة",
+            "locale": "ar",
+            "template": "documented-authored-9bc98e966bf63569f3fc"
+          },
+          "note": {
+            "text": "استكمل التشخيص والعلامات بعد التنظير الداخلي للحصول على الدرجة الكاملة.",
+            "locale": "ar",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الجزء قبل التنظير الداخلي",
+                "locale": "ar",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "١ نقاط",
+                "locale": "ar",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "روكال الكامل ≤ 2: خطر منخفض لإعادة النزف والوفاة",
+            "locale": "ar",
+            "template": "documented-authored-639e48dd20782e40c718"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الجزء قبل التنظير الداخلي",
+                "locale": "ar",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "٤ نقاط",
+                "locale": "ar",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "روكال الكامل من 3 إلى 4: خطر متوسط",
+            "locale": "ar",
+            "template": "documented-authored-ed314dcac398994be281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الجزء قبل التنظير الداخلي",
+                "locale": "ar",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "٧ نقاط",
+                "locale": "ar",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "روكال الكامل ≥ 5: خطر مرتفع للوفاة",
+            "locale": "ar",
+            "template": "documented-authored-f3b673c0b189d18556e4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "内镜前 Rockall 0：低风险",
+            "locale": "zh",
+            "template": "documented-authored-a63b8c4ee3f2468270a9"
+          },
+          "note": {
+            "text": "完整评分需填写内镜后的诊断和病征标志。",
+            "locale": "zh",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "内镜前 Rockall ≥ 4：死亡风险增加",
+            "locale": "zh",
+            "template": "documented-authored-9bc98e966bf63569f3fc"
+          },
+          "note": {
+            "text": "完整评分需填写内镜后的诊断和病征标志。",
+            "locale": "zh",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "内镜前部分",
+                "locale": "zh",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "1 分",
+                "locale": "zh",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "完整 Rockall ≤ 2：再出血和死亡风险低",
+            "locale": "zh",
+            "template": "documented-authored-639e48dd20782e40c718"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "内镜前部分",
+                "locale": "zh",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "4 分",
+                "locale": "zh",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "完整 Rockall 3 至 4：中等风险",
+            "locale": "zh",
+            "template": "documented-authored-ed314dcac398994be281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "内镜前部分",
+                "locale": "zh",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "7 分",
+                "locale": "zh",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "完整 Rockall ≥ 5：死亡风险高",
+            "locale": "zh",
+            "template": "documented-authored-f3b673c0b189d18556e4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "内視鏡前Rockall 0：低リスク",
+            "locale": "ja",
+            "template": "documented-authored-a63b8c4ee3f2468270a9"
+          },
+          "note": {
+            "text": "完全スコアのために、内視鏡後の診断と病変所見を入力してください。",
+            "locale": "ja",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "内視鏡前Rockall ≥ 4：死亡リスク増加",
+            "locale": "ja",
+            "template": "documented-authored-9bc98e966bf63569f3fc"
+          },
+          "note": {
+            "text": "完全スコアのために、内視鏡後の診断と病変所見を入力してください。",
+            "locale": "ja",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "内視鏡前の部分",
+                "locale": "ja",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "1点",
+                "locale": "ja",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "完全Rockall ≤ 2：再出血および死亡のリスクが低い",
+            "locale": "ja",
+            "template": "documented-authored-639e48dd20782e40c718"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "内視鏡前の部分",
+                "locale": "ja",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "4点",
+                "locale": "ja",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "完全Rockall 3～4：中等リスク",
+            "locale": "ja",
+            "template": "documented-authored-ed314dcac398994be281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "内視鏡前の部分",
+                "locale": "ja",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "7点",
+                "locale": "ja",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "完全Rockall ≥ 5：死亡リスクが高い",
+            "locale": "ja",
+            "template": "documented-authored-f3b673c0b189d18556e4"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "प्री-एंडोस्कोपिक रॉकॉल 0: कम जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-a63b8c4ee3f2468270a9"
+          },
+          "note": {
+            "text": "पूर्ण स्कोर के लिए एंडोस्कोपी के बाद निदान और स्टिग्माटा के साथ पूरा करें।",
+            "locale": "hi",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "प्री-एंडोस्कोपिक रॉकॉल ≥ 4: मृत्यु का बढ़ा हुआ जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-9bc98e966bf63569f3fc"
+          },
+          "note": {
+            "text": "पूर्ण स्कोर के लिए एंडोस्कोपी के बाद निदान और स्टिग्माटा के साथ पूरा करें।",
+            "locale": "hi",
+            "template": "documented-authored-ebce7f215bc9bcc28455"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्री-एंडोस्कोपिक भाग",
+                "locale": "hi",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "1 अंक",
+                "locale": "hi",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "पूर्ण रॉकॉल ≤ 2: पुनः रक्तस्राव और मृत्यु का कम जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-639e48dd20782e40c718"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्री-एंडोस्कोपिक भाग",
+                "locale": "hi",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "4 अंक",
+                "locale": "hi",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "पूर्ण रॉकॉल 3 से 4: मध्यम जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-ed314dcac398994be281"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्री-एंडोस्कोपिक भाग",
+                "locale": "hi",
+                "template": "documented-authored-f64e6d1ca795835fd14a"
+              },
+              "value": {
+                "text": "7 अंक",
+                "locale": "hi",
+                "template": "documented-authored-5e2543569c1ec470e7a7",
+                "sourceNumbers": [
+                  7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "पूर्ण रॉकॉल ≥ 5: मृत्यु का उच्च जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-f3b673c0b189d18556e4"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

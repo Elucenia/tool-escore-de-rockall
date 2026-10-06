@@ -1,0 +1,320 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "escore-de-rockall",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "ee68e333e35e7eda6821f1e3d6df25dc3b65953e",
+    "oldEngineSha256": "e7f79f8bcdf4f755dae390de16112043329952c91ccec5ad5fbcadfdb6abeba5",
+    "currentEngineSha256": "de6312367a53946125b5c48e6841ccdbbbb2a8ecb1e1ecf13a0dade1efa98a84"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "55 anos, sem choque nem comorbidades, antes da endoscopia: pré-endoscópico 0",
+      "input": {
+        "idade": "0",
+        "choque": "0",
+        "comorb": "0",
+        "diag": "na",
+        "estigma": "na"
+      },
+      "publicOutput": {
+        "id": "escore-de-rockall",
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "Rockall pré-endoscópico (0 a 7)",
+        "raw": {
+          "pre": 0,
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pre": 0
+        },
+        "main": "0",
+        "level": "low",
+        "verdict": "pré-endoscópico 0"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "Rockall pré-endoscópico (0 a 7)",
+        "level": "low",
+        "verdict": "Rockall pré-endoscópico 0: baixo risco",
+        "note": "Complete com o diagnóstico e os estigmas após a endoscopia para o escore completo.",
+        "raw": {
+          "pre": 0,
+          "score": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "85 anos, hipotensão, cardiopatia, antes da endoscopia: pré-endoscópico 6",
+      "input": {
+        "idade": "2",
+        "choque": "2",
+        "comorb": "2",
+        "diag": "na",
+        "estigma": "na"
+      },
+      "publicOutput": {
+        "id": "escore-de-rockall",
+        "main": [
+          "6",
+          "pontos"
+        ],
+        "label": "Rockall pré-endoscópico (0 a 7)",
+        "raw": {
+          "pre": 6,
+          "score": 6
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "pre": 6
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "6",
+          "pontos"
+        ],
+        "label": "Rockall pré-endoscópico (0 a 7)",
+        "level": "high",
+        "verdict": "Rockall pré-endoscópico ≥ 4: risco aumentado de óbito",
+        "note": "Complete com o diagnóstico e os estigmas após a endoscopia para o escore completo.",
+        "raw": {
+          "pre": 6,
+          "score": 6
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "65 anos, sem choque, úlcera sem estigmas: completo 2 (baixo)",
+      "input": {
+        "idade": "1",
+        "choque": "0",
+        "comorb": "0",
+        "diag": "1",
+        "estigma": "0"
+      },
+      "publicOutput": {
+        "id": "escore-de-rockall",
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "Rockall completo (0 a 11)",
+        "raw": {
+          "pre": 1,
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 2,
+          "pre": 1
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "Rockall completo (0 a 11)",
+        "level": "low",
+        "verdict": "Rockall completo ≤ 2: baixo risco de ressangramento e óbito",
+        "rows": [
+          [
+            "Parte pré-endoscópica",
+            "1 pontos"
+          ]
+        ],
+        "raw": {
+          "pre": 1,
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "70 anos, taquicardia, cardiopatia, Mallory-Weiss sem estigmas: completo 4",
+      "input": {
+        "idade": "1",
+        "choque": "1",
+        "comorb": "2",
+        "diag": "0",
+        "estigma": "0"
+      },
+      "publicOutput": {
+        "id": "escore-de-rockall",
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "Rockall completo (0 a 11)",
+        "raw": {
+          "pre": 4,
+          "score": 4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 4
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "Rockall completo (0 a 11)",
+        "level": "mid",
+        "verdict": "Rockall completo de 3 a 4: risco intermediário",
+        "rows": [
+          [
+            "Parte pré-endoscópica",
+            "4 pontos"
+          ]
+        ],
+        "raw": {
+          "pre": 4,
+          "score": 4
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "85 anos, hipotensão, insuficiência renal, neoplasia com vaso visível: completo 11",
+      "input": {
+        "idade": "2",
+        "choque": "2",
+        "comorb": "3",
+        "diag": "2",
+        "estigma": "2"
+      },
+      "publicOutput": {
+        "id": "escore-de-rockall",
+        "main": [
+          "11",
+          "pontos"
+        ],
+        "label": "Rockall completo (0 a 11)",
+        "raw": {
+          "pre": 7,
+          "score": 11
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 11,
+          "pre": 7
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "11",
+          "pontos"
+        ],
+        "label": "Rockall completo (0 a 11)",
+        "level": "high",
+        "verdict": "Rockall completo ≥ 5: alto risco de óbito",
+        "rows": [
+          [
+            "Parte pré-endoscópica",
+            "7 pontos"
+          ]
+        ],
+        "raw": {
+          "pre": 7,
+          "score": 11
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}
